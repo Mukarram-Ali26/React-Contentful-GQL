@@ -7,11 +7,11 @@ const Post = ({person}) => {
         return (
        
         <div>
-           <h1>{name}</h1>
-           <h3>{age}</h3>
+           <h2><b>Name: </b>{name}</h2>
+           <h3><b>Age:</b> {age}</h3>
            {featuredImage && <img src={featuredImage.fields.file.url} alt={name} title={name}/>}
            {/* <section dangerouslySetInnerHTML={{__html: postDesc}}/> it is for markdown */}
-           <section>{descrption}</section>
+           <section><h3>Description:</h3> {descrption}</section>
         </div>
     )
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Client } from "./client";
 import Posts from './components/Posts';
-
+import './App.css'
 
 export const App = () => {
 
@@ -15,8 +15,8 @@ export const App = () => {
 
   
   return (
-    <div>
-      hello
+    <div className='App'>
+     <h1>This is our Blog site using Contentful</h1> 
       <Posts data={data} />
     </div>
   )
